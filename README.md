@@ -1,4 +1,4 @@
-# Conditional Access Exclusion Analyzer - README Update
+# Conditional Access Exclusion Analyzer
 
 Based on your license requirements, here's the updated README.md with the appropriate license section:
 
