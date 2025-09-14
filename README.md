@@ -1,11 +1,11 @@
-# Conditional Access Exclusion Analyzer
+# Conditional Access Exclusion Analyser
 
 Based on your license requirements, here's the updated README.md with the appropriate license section:
 
 ```markdown
-# Conditional Access Exclusion Analyzer
+# Conditional Access Exclusion Analyser
 
-A PowerShell tool for analyzing Microsoft Entra ID (Azure AD) Conditional Access policy exclusions. Discover which users are excluded from your security policies and understand exactly why.
+A PowerShell tool for analysing Microsoft Entra ID (Azure AD) Conditional Access policy exclusions. Identify which users are excluded from your security policies and understand the specific reasons for their exclusion.
 
 ## 🎯 Purpose
 
@@ -31,7 +31,7 @@ Ever wondered why certain users aren't being prompted for MFA? Or which legacy g
 
 - **Performance Optimized**
   - Progress tracking for large environments
-  - Group caching to minimize API calls
+  - Group caching to minimise API calls
   - Efficient handling of complex group structures
 
 ## 📋 Prerequisites
@@ -134,7 +134,7 @@ Install the required PowerShell modules using the commands in the Prerequisites 
 
 ### Script runs slowly
 - Large numbers of nested groups can impact performance
-- Consider analyzing specific high-risk users rather than all users
+- Consider analysing specific high-risk users rather than all users
 - The script includes progress bars to track status
 
 ## 🤝 Contributing
@@ -149,7 +149,7 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 
 ---
 
-##**License:** Apache 2.0 (see LICENSE)  
+## 📄 **License:** Apache 2.0 (see LICENSE)  
 **Additional restriction:** Commons Clause (see COMMONS-CLAUSE.txt)
 
 **SPDX headers**
