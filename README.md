@@ -147,7 +147,9 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 - [Microsoft Graph PowerShell SDK](https://docs.microsoft.com/en-us/powershell/microsoftgraph/)
 - [Blog: "Help, I'm Trapped in a Conditional Access Policy Factory!"](#)
 
-#**License:** Apache 2.0 (see LICENSE)  
+---
+
+##**License:** Apache 2.0 (see LICENSE)  
 **Additional restriction:** Commons Clause (see COMMONS-CLAUSE.txt)
 
 **SPDX headers**
