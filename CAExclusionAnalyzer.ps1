@@ -30,40 +30,12 @@
     - Progress tracking for large environments
     - Robust error handling and logging
 
-.LICENSE
-    Licensed under the Apache License, Version 2.0 (the "Apache License");
-    you may not use this file except in compliance with the Apache License.
-    You may obtain a copy of the Apache License at:
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    This Software is provided under the Apache License with the following
-    Commons Clause Restriction:
-
-    "The license granted herein does not include, and the Apache License
-    does not grant to you, the right to Sell the Software. For purposes of
-    this restriction, “Sell” means practicing any or all of the rights
-    granted to you under the Apache License to provide to third parties,
-    for a fee or other consideration (including without limitation fees for
-    hosting, consulting, implementation, or support services related to the
-    Software), a product or service whose value derives, entirely or
-    substantially, from the functionality of the Software. Any license notice
-    or attribution required by the Apache License must also include this
-    Commons Clause Restriction."
-
-    For paid/professional use cases prohibited above, obtain a commercial
-    license from Global Micro Solutions (Pty) Ltd: licensing@globalmicro.co.za
-
-.WARRANTY
-    Distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
-    either express or implied. See the Apache License for the specific language
-    governing permissions and limitations under the License.
-
 .PARAMETER UserPrincipalName
-    The User Principal Name (UPN) of the user to analyze. This is typically the user's email address
+    The User Principal Name (UPN) of the user to analyse. This is typically the user's email address
     in Microsoft Entra ID. Example: john.doe@contoso.com
 
 .PARAMETER ObjectId
-    The Object ID (GUID) of the user to analyze. This is the unique identifier for the user
+    The Object ID (GUID) of the user to analyse. This is the unique identifier for the user
     in Microsoft Entra ID. Example: 12345678-1234-1234-1234-123456789012
 
 .PARAMETER OutputPath
@@ -79,33 +51,29 @@
     and whether to export results to CSV.
 
 .EXAMPLE
-    # Analyze user by UPN
+    # Analyse user by UPN
     .\Get-ConditionalAccessUserExclusions.ps1 -UserPrincipalName "john.doe@contoso.com"
     
-    Analyzes all Conditional Access policies to find exclusions for john.doe@contoso.com and
+    Analyses all Conditional Access policies to find exclusions for john.doe@contoso.com and
     displays results in the console.
 
 .EXAMPLE
-    # Analyze user by Object ID with CSV export
+    # Analyse user by Object ID with CSV export
     .\Get-ConditionalAccessUserExclusions.ps1 -ObjectId "12345678-1234-1234-1234-123456789012" -OutputPath "C:\Reports\JohnDoe_Exclusions.csv"
     
-    Analyzes exclusions using the user's Object ID and exports detailed results to a CSV file
+    Analyses exclusions using the user's Object ID and exports detailed results to a CSV file
     for documentation or further analysis.
 
 .EXAMPLE
-    # Analyze admin user with many group memberships
+    # Analyse admin user with many group memberships
     .\Get-ConditionalAccessUserExclusions.ps1 -UserPrincipalName "admin@contoso.com" -OutputPath "C:\Audit\AdminExclusions.csv"
     
-    Particularly useful for analyzing administrative accounts that may have numerous group
+    Particularly useful for analysing administrative accounts that may have numerous group
     memberships and role assignments causing policy exclusions.
 
 .NOTES
-    Script: Get-ConditionalAccessUserExclusions.ps1
-    Author: [Your Name/Organization]
-    Version: 1.0.0
-    Release Date: September 2025
-    GitHub: https://github.com/yourusername/ConditionalAccessTools
-    Blog: https://yourblog.com/analyzing-conditional-access-exclusions
+    GitHub: https://github.com/jjrmilner/ConditionalAccessTools
+    Blog: https://jjrmilner.substack.com/analyzing-conditional-access-exclusions
     
     Prerequisites:
     - PowerShell 5.1 or higher
